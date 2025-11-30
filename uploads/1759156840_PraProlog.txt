@@ -1,0 +1,10 @@
+
+
+
+
+
+
+['C:/ProjetosProlog/calculadora_custo_dirigir_com_carbono.pl'].
+
+
+calcular_custo_diario.

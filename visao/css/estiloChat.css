@@ -1,0 +1,193 @@
+/* 
+    Created on : 18/12/2017, 20:57:36
+    Author     : Emanuel Chico Gonga
+*/
+
+*{margin: 0;padding: 0;box-sizing: border-box;}
+body{ background-color: #ccc; }
+  ul{ list-style-type: none; }
+
+  .header_Chat{
+    float: left;
+    width: 100%;
+    padding: 5px;
+    cursor: pointer;
+    background: #00ACE6;
+    border-left: 1px solid #999;
+    border-right: 1px solid #999;
+  }
+  
+.logado{
+    position: fixed;
+    margin-top: 52px;
+    right: 0;
+    width: 20%;
+    background: linear-gradient(to right,#ccc, #fff 30%);
+    border-left: 1px solid #666;   
+}
+#user_online{
+    height: 92%;
+    bottom: -88%;
+    transition: all .8s;
+}
+#user_online:target{
+        transform: translateY(-90.5%);
+    }
+#user_online .usuario_logado{
+    float: left;
+    width: 100%;
+    padding: 5px;
+    background: #ebebeb;
+    border-left: 1px solid #999;
+    border-right: 1px solid #999;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.usuario_logado ul li{
+    float: right;
+    width: 100%;
+    background: linear-gradient(to bottom, #fff, #ccc 130%);
+    border: 1px solid #999;
+    border-radius: 4px;
+    position: relative;
+    padding: 4px;
+    margin-bottom: 4px;
+}
+.usuario_logado ul li:hover{
+    border-color: #999;
+    background: linear-gradient(to right,#ccc, #fff 60%)
+}
+.usuario_logado ul li a{
+    text-decoration: none;
+    float: left;
+    width: 70%;
+    margin-left: 10px;
+    font:  16px Tahoma,areal,helvativa;
+    color: #666;
+    line-height: 40px;
+}
+.usuario_logado::-webkit-scrollbar{width: 3px;}
+.usuario_logado::-webkit-scrollbar-track{background: #666; border-left: 1px solid #ebebeb; border-right: 1px solid #ebebeb;}
+.usuario_logado::-webkit-scrollbar-thumb{ background: #666; }
+.usuario_logado::-webkit-scrollbar-thumb:hover{ background: #069;}
+
+.imgSmall{
+    float: left;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.imgSmall img{
+    width: 100%;
+}
+.status{
+    position: absolute;
+    right: 8px;
+    top: 40%;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: #666;
+}
+.status.off{background: #ccc;}
+.status.on{background: #090;}
+
+/** JANELAS **/
+#chats{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 82%;
+}
+
+.window{
+    float: left;
+    width: 270px;
+    margin-left: 5px;
+    height: auto;
+    overflow: hidden;
+    border-radius: 4px;
+    transition: all .8s;
+}
+
+.window .header_window{
+    float: left;
+    background: #00ACE6;
+    padding: 5px;
+    width: 270px;
+    position: relative;
+    cursor: pointer;
+}
+.window .header_window .close{
+    text-decoration: none;
+    float: left;
+    color: red;
+    font: 17px Tahoma, Areal;
+    padding: 0 10px 0 0 
+}
+.window .header_window .nome{
+    float: left;
+    font: 16px Tahoma, Arial;
+    color:  white;
+}
+.window .corpo{
+    float: left;
+    width: 100%;
+}
+.window .corpo .mensagens{
+    float: left;
+    width: 100%;
+    padding: 5px;
+    background: #ebebeb;
+    border-left: 1px solid #999;
+    border-right: 1px solid #999;
+    height: 230px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.mensagens ul{
+    float: left;
+    width: 100%;
+}
+.mensagens ul li{
+    float: right;
+    width: 80%;
+    background: linear-gradient(to bottom, #fff, #ccc 130%);
+    border: 1px solid #999;
+    border-radius: 4px;
+    position: relative;
+    padding: 4px;
+    margin-bottom: 4px;
+}
+.mensagens ul li .imgSmall{
+    position: absolute;
+    widows: 35px;
+    height: 40px;
+    left: -45px;
+}
+.mensagens ul li p{
+    font: 13px tahoma, areal;
+    color: #666;
+}
+.mensagens ul li.eu{
+    float: left; background: #a4e9ff;
+}
+.mensagens::-webkit-scrollbar{width: 3px;}
+.mensagens::-webkit-scrollbar-track{background: #666; border-left: 1px solid #ebebeb; border-right: 1px solid #ebebeb;}
+.mensagens::-webkit-scrollbar-thumb{ background: #666; }
+.mensagens::-webkit-scrollbar-thumb:hover{ background: #069;}
+.window .corpo .enviar_mensagem{
+    float: left;
+    width: 100%;
+    position: relative;
+}
+.window .corpo .enviar_mensagem input{
+    float: left;
+    width: 100%;
+    padding: 5px;
+    background: white;
+    border: 1px solid #999;
+    outline: none;
+}

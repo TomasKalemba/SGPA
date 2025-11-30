@@ -1,0 +1,21 @@
+/* Adiciona uma cor de fundo mais suave ao formulário */
+.card-body {
+    background-color: #f9f9f9; /* Cor suave de fundo para o conteúdo */
+}
+
+/* Botões personalizados */
+.btn-warning {
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-link {
+    background: none;
+    border: none;
+    color: #007bff;
+}
